@@ -1,14 +1,20 @@
-import Title from '@/components/Title';
+import SEO from '../components/SEO/seo';
+import VideoBaground from '../sections/video-baground/video-baground.component';
+import AboutSection from '../sections/about-section/about-section.component';
+import Header from '../components/header/header.component';
+import ParallaxComponent from '../components/paralax/paralax.component';
+import GlobalStyle from '../globalStyles';
 
-export default function Home() {
-  return (
-    <main>
-      <Title>Hello TypeScript!</Title>
-      <p>A TypeScript starter for Gatsby. Great for advanced users.</p>
-      <p>
-        Follow me on Twitter (
-        <a href="https://twitter.com/jpedroschmitz">@jpedroschmitz</a>)
-      </p>
-    </main>
-  );
-}
+const IndexPage = () => (
+  <>
+    <SEO title="Home" />
+    <GlobalStyle />
+    <Header />
+    <ParallaxComponent
+      homeSection={<VideoBaground />}
+      aboutSection={<AboutSection />}
+    />
+  </>
+);
+
+export default IndexPage;
