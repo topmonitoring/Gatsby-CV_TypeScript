@@ -6,12 +6,32 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+   - name: "parallax"
+    label: "Parallax Section"
+    folder: "src/sections/parallax"
+    create: true
+    slug: "parallax"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
+      - {label: "Backgraund Image", name: "backgraundImg", widget: "image"}
+
   - name: "home"
     label: "Home Section"
     folder: "src/sections/home"
     create: true
-    #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "home-section"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
       - {label: "Author Name", name: "authorName", widget: "string"}
+      - {label: "Media Video BGR", name: "video-bgr", widget: "image"}
+
+  - name: "about"
+    label: "About Section"
+    folder: "src/sections/about"
+    create: true
+    slug: "about-section"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-section"}
+      - {label: "Author Name", name: "authorName", widget: "string"}
+      - {label: "Author Pick", name: "authorPick", widget: "image"}
       - {label: "About Description", name: "description", widget: "markdown"}
