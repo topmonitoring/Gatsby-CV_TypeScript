@@ -6,7 +6,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "parallax"
+    - name: "parallax"
+    identifier_field: templateKey
     label: "Parallax Section"
     folder: "src/sections/parallax"
     create: true
@@ -15,6 +16,7 @@ collections:
       - {label: "Backgraund Image", name: "backgraundImg", widget: "image"}
 
   - name: "home"
+    identifier_field: templateKey
     label: "Home Section"
     folder: "src/sections/home"
     create: true
@@ -24,6 +26,7 @@ collections:
       - {label: "Media Video BGR", name: "video-bgr", widget: "file"}
 
   - name: "about"
+    identifier_field: templateKey
     label: "About Section"
     folder: "src/sections/about"
     create: true
