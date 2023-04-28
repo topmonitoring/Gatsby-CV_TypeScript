@@ -6,15 +6,12 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "home"
+    label: "Home Section"
+    folder: "src/sections/home"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    #slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
+      - {label: "Author Name", name: "authorName", widget: "string"}
+      - {label: "About Description", name: "description", widget: "markdown"}
