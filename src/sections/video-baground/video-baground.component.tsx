@@ -1,5 +1,5 @@
 import React from 'react';
-import VideoBgr from '../../static/pexels-michal-marek-1409899-3840x2160-25fps.mp4';
+import VideoBgr from '../../../static/pexels-michal-marek-1409899-3840x2160-25fps.mp4';
 import WaterComponent from '../../components/animated-water/animated-water.component';
 import {
   StyledVideo,
