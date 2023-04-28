@@ -10,7 +10,6 @@ collections:
     label: "Parallax Section"
     folder: "src/sections/parallax"
     create: true
-    slug: "{{templateKey}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
       - {label: "Backgraund Image", name: "backgraundImg", widget: "image"}
@@ -19,7 +18,6 @@ collections:
     label: "Home Section"
     folder: "src/sections/home"
     create: true
-    slug: "{{templateKey}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
       - {label: "Author Name", name: "authorName", widget: "string"}
@@ -29,7 +27,6 @@ collections:
     label: "About Section"
     folder: "src/sections/about"
     create: true
-    slug: "{{templateKey}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-section"}
       - {label: "Author Name", name: "authorName", widget: "string"}
