@@ -3,18 +3,17 @@ import VideoBaground from '../sections/video-baground/video-baground.component';
 import AboutSection from '../sections/about-section/about-section.component';
 import Header from '../components/header/header.component';
 import ParallaxComponent from '../components/paralax/paralax.component';
-import GlobalStyle from '../globalStyles';
+//import GlobalStyle from '../globalStyles';
+import Layout from '@/components/layout/layout';
 
 const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <GlobalStyle />
+  <Layout>
     <Header />
     <ParallaxComponent
       homeSection={<VideoBaground />}
       aboutSection={<AboutSection />}
     />
-  </>
+  </Layout>
 );
 
 export default IndexPage;

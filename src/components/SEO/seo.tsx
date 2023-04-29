@@ -6,6 +6,6 @@
  */
 import React from 'react';
 const SEO: React.FC<any> = () => {
-  return <head></head>;
+  return <div>SEO DATA MEKE THIS HEAD TAG OR USE REACT SOMTING</div>;
 };
 export default SEO;

@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: true
 media_folder: static/img
 public_folder: /img
 
@@ -9,7 +10,7 @@ collections:
     - name: "parallax"
     identifier_field: templateKey
     label: "Parallax Section"
-    folder: "src/sections/parallax"
+    folder: "src/sections/parallax/parallax.md"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
@@ -18,7 +19,7 @@ collections:
   - name: "home"
     identifier_field: templateKey
     label: "Home Section"
-    folder: "src/sections/home"
+    folder: "src/sections/home/home.md"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
@@ -28,7 +29,7 @@ collections:
   - name: "about"
     identifier_field: templateKey
     label: "About Section"
-    folder: "src/sections/about"
+    folder: "src/sections/about/about.md"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-section"}

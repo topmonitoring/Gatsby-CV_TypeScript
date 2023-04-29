@@ -8,6 +8,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
