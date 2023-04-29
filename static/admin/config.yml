@@ -3,14 +3,14 @@ backend:
   branch: main
 
 local_backend: true
-media_folder: static/img
-public_folder: /img
+media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: "parallax"
     identifier_field: templateKey
     label: "Parallax Section"
-    folder: "src/sections/parallax/parallax.md"
+    folder: "src/sections/parallax"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
@@ -19,7 +19,7 @@ collections:
   - name: "home"
     identifier_field: templateKey
     label: "Home Section"
-    folder: "src/sections/home/home.md"
+    folder: "src/sections/home"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
@@ -29,7 +29,7 @@ collections:
   - name: "about"
     identifier_field: templateKey
     label: "About Section"
-    folder: "src/sections/about/about.md"
+    folder: "src/sections/about"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-section"}
