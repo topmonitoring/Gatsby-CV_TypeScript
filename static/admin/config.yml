@@ -7,7 +7,7 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-    - name: "parallax"
+  - name: "parallax"
     identifier_field: templateKey
     label: "Parallax Section"
     folder: "src/sections/parallax/parallax.md"
