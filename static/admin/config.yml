@@ -10,7 +10,7 @@ collections:
   - name: "parallax"
     identifier_field: templateKey
     label: "Parallax Section"
-    folder: "static/sections"
+    folder: "static/sections/parallax"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
@@ -19,7 +19,7 @@ collections:
   - name: "home"
     identifier_field: templateKey
     label: "Home Section"
-    folder: "static/sections"
+    folder: "static/sections/home"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
@@ -29,7 +29,7 @@ collections:
   - name: "about"
     identifier_field: templateKey
     label: "About Section"
-    folder: "static/sections"
+    folder: "static/sections/about"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-section"}
