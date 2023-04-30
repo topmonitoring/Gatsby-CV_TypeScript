@@ -1,9 +1,10 @@
 import React from 'react';
 import PayPalButton from '../paypal/paypal-button.component';
+import {StyledFooter, StyledFooterEnd, FooterGrid} from './footer.styles'
 
 const Footer: React.FC = () => (
-  <footer className="footer">
-    <div className="footer-grid">
+  <StyledFooter>
+    <FooterGrid>
       <div className="info">
         <h3>ABOUT THIS SITE</h3>
         <span>
@@ -25,31 +26,22 @@ const Footer: React.FC = () => (
         <h3>FOLLOW ME</h3>
       </div>
       <div className="links">
-        <h3>SECTIONS</h3>
+        <h3>USFULL LINKS</h3>
       </div>
-    </div>
-    <div className="footer-end">
+    </FooterGrid>
+    <StyledFooterEnd>
       Created by{` `}
       <b>
         <a href="https://github.com/topmonitoring" target="blank">
           <strong> Dobrin Dobrev</strong>
         </a>
       </b>
-      {` `}© {new Date().getFullYear()} Powerd by Gatsby and GRAFCMS{` `}
+      {` `}© {new Date().getFullYear()} Powerd by Gatsby and Netlify CMS{` `}
       <span role="img" aria-label="heart">
         ❤️
       </span>
-      Logo by{` `}
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
-        Freepik
-      </a>
-      {` `}
-      from{` `}
-      <a href="https://www.flaticon.com/" title="Flaticon">
-        www.flaticon.com
-      </a>
-    </div>
-  </footer>
+    </StyledFooterEnd>
+  </StyledFooter>
 );
 
 export default Footer;

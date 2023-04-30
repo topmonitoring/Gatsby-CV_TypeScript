@@ -9,16 +9,22 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-postcss',
+    `gatsby-plugin-netlify-cms`,
     {
-      resolve: `gatsby-plugin-netlify-cms`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        /**
-         * One convention is to place your Netlify CMS customization code in a
-         * `src/cms` directory.
-         */
-       // modulePath: `${__dirname}/src/cms/cms.js`,
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/static/sections`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
   jsxRuntime: `automatic`,
 };

@@ -13,6 +13,14 @@ export const StyledHeder = styled.header`
   z-index: 20;
 `;
 
+export const StyledBlurSection =styled.div`
+width: 100vw;
+height: 100vh;
+position: absolute;
+background-color: whitesmoke;
+opacity: 0.4;
+`
+
 export const Wrapper = styled.div`
   position: relative;
   cursor: pointer;

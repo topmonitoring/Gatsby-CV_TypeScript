@@ -41,8 +41,8 @@ const MobileNav: React.FC<any> = ({ open }) => {
   return transition(({ opacity, transformMain, transformFoot }, visible) => {
     return visible ? (
       <AnimatedMobileNav style={{ opacity }}>
-        <StyledContentWraper>
-          <AnimatedList style={{ transform: transformMain }}>
+        <StyledContentWraper >
+          <AnimatedList style={{ transform: transformMain }} >
             {headings.map((heading) => (
               <StyledListItem key={heading}>{heading}</StyledListItem>
             ))}
