@@ -4,7 +4,7 @@ export const StyledVideo = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   height: 100vh;
   overflow: hidden;
   video {

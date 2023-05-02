@@ -10,7 +10,11 @@ const url = (name: string, wrap = false) =>
     wrap ? `)` : ``
   }`;
 
-const ParallaxComponent: React.FC<any> = ({ homeSection, aboutSection, footerSection}) => {
+const ParallaxComponent: React.FC<any> = ({
+  homeSection,
+  aboutSection,
+  footerSection,
+}) => {
   const parallax = useRef<IParallax>(null!);
 
   return (
@@ -130,22 +134,7 @@ const ParallaxComponent: React.FC<any> = ({ homeSection, aboutSection, footerSec
             backgroundImage: url(`clients`, true),
           }}
         />
-
-        <ParallaxLayer
-          offset={0}
-          speed={0.1}
-          // onClick={() => parallax.current.scrollTo(1)}
-          style={{
-            display: `flex`,
-            alignItems: `center`,
-            justifyContent: `center`,
-            zIndex: `2`,
-            margin: `6rem auto`,
-          }}
-        >
-          <ScrollAnimation />
-        </ParallaxLayer>
-
+        <ScrollAnimation />
         <ParallaxLayer
           offset={1}
           speed={0.1}
@@ -172,9 +161,9 @@ const ParallaxComponent: React.FC<any> = ({ homeSection, aboutSection, footerSec
           <img src={url(`clients-main`)} style={{ width: `40%` }} />
         </ParallaxLayer>
 
-        <ParallaxLayer 
-        offset={3}
-        speed={-0}
+        <ParallaxLayer
+          offset={3}
+          speed={-0}
           style={{
             display: `flex`,
             alignItems: `end`,

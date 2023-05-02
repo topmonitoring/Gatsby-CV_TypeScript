@@ -7,19 +7,19 @@ export const StyledHeder = styled.header`
   top: 0.4rem;
   left: 0;
   right: 0.4rem;
-  justify-content: flex-end;
   padding: 2rem;
   margin: 0 auto;
   z-index: 20;
+  justify-content: space-between;
 `;
 
-export const StyledBlurSection =styled.div`
-width: 100vw;
-height: 100vh;
-position: absolute;
-background-color: whitesmoke;
-opacity: 0.4;
-`
+export const StyledBlurSection = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: whitesmoke;
+  opacity: 0.4;
+`;
 
 export const Wrapper = styled.div`
   position: relative;

@@ -1,4 +1,3 @@
-import SEO from '../components/SEO/seo';
 import VideoBaground from '../components/video-baground/video-baground.component';
 import AboutSection from '../sections/about/about.component';
 import ParallaxComponent from '../components/paralax/paralax.component';

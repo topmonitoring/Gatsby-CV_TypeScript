@@ -11,6 +11,10 @@ const Header: React.FC = () => {
   return (
     <>
       <StyledHeder>
+        <img
+          src={`../../static/assets/logo1.png`}
+          style={{ height: `40px`, width: `40px` }}
+        ></img>
         <HamburgerMenu open={open} toggle={handleNavbar} />
       </StyledHeder>
       <MobileNav open={open} />

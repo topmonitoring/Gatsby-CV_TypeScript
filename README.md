@@ -41,65 +41,10 @@
 - ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
 - 🗂 Path Mapping — Import components or images using the `@` prefix
 
-## Quick Start
-
-The best way to start with this template is using the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/).
-
-```
-npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
-```
-
-### Development
-
-To start the project locally, run:
-
-```bash
-pnpm start
-```
-
-Open `http://localhost:8000` with your browser to see the result.
-
-## Documentation
-
-### Requirements
-
-- Node.js >= 18
-- pnpm 7
-
-### Directory Structure
-
-- [`__helpers__`](./__helpers__/) — Helpers files for testing configuration.<br>
-- [`__mocks__`](./__mocks__/) — Mocks for testing.<br>
-- [`.github`](.github) — GitHub configuration including the CI workflow.<br>
-- [`.husky`](.husky) — Husky configuration and hooks.<br>
-- [`src`](./src) — Application source code, including pages, components, styles.
-
-### Scripts
-
-- `pnpm start` — Starts the application in development mode at `http://localhost:8000`.
-- `pnpm build` — Compile your application and make it ready for deployment.
-- `pnpm serve` — Serve the production build of your site
-- `pnpm clean` — Wipe out the cache (`.cache` folder).
-- `pnpm type-check` — Validate code using TypeScript compiler.
-- `pnpm lint` — Runs ESLint for all files in the `src` directory.
-- `pnpm format` — Runs Prettier for all files in the `src` directory.
-- `pnpm test` — Run tests with Vitest.
-- `pnpm test:watch` — Run tests on watch mode.
-
-### Path Mapping
-
-TypeScript are pre-configured with custom path mappings. To import components or files, use the `@` prefix.
-
-```tsx
-import { Button } from '@/components/Button';
-
-// To import images or other files from the static folder
-import avatar from '@/static/avatar.png';
-```
-
-### Switch to Yarn/npm
-
-This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config` file).
+## Info
+new Portfolio website with typescript and Netlify CMS
+Work in progress
+see preview https://ephemeral-pie-2e7b11.netlify.app/
 
 ## License
 

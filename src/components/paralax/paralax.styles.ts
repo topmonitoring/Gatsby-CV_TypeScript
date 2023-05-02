@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { Parallax } from '@react-spring/parallax';
 
 export const ScrollAnimation = styled.div`
-  margin: 40vh auto;
+  margin: 45vh auto;
   z-index: 1;
   width: 60px;
   height: 60px;

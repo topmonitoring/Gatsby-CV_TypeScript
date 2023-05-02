@@ -8,7 +8,7 @@ import {
 
 const VideoBaground: React.FC = () => (
   <div>
-    <StyledVideo >
+    <StyledVideo>
       <video
         autoPlay
         muted
