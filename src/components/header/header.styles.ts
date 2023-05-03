@@ -100,13 +100,14 @@ export const AnimatedIconWraper = styled(animated.div)`
   display: flex;
   justify-content: center;
   margin-top: 3rem;
-`;
-
-export const StyledIcon = styled.div`
   .icon {
     width: 2.5rem;
     height: 2.5rem;
     color: white;
     margin: 1rem;
+    cursor: pointer;
+  }
+  .icon:hover {
+    fill: aqua;
   }
 `;
