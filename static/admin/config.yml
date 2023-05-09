@@ -24,7 +24,15 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-section"}
       - {label: "Author Name", name: "authorName", widget: "string"}
+      - {label: "Author Role Carousel ", name: "authorRole", widget: "string"}
       - {label: "Media Video BGR", name: "video-bgr", widget: "file"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Instagram link", name: "insta-link", widget: "string"}
+      - {label: "Facebook link", name: "facebook-link", widget: "string"}
+      - {label: "Twitter link", name: "twitter-link", widget: "string"}
+      - {label: "Linkedin link", name: "linkedin-link", widget: "string"}
+      - {label: "Github link", name: "github-link", widget: "string"}
+      - {label: "Blog link", name: "blog-link", widget: "string"}
 
   - name: "about"
     identifier_field: templateKey
@@ -36,3 +44,16 @@ collections:
       - {label: "Author Name", name: "authorName", widget: "string"}
       - {label: "Author Pick", name: "authorPick", widget: "image"}
       - {label: "About Description", name: "description", widget: "markdown"}
+  
+  - name: "work"
+    identifier_field: templateKey
+    label: "Work Section"
+    folder: "static/sections/work"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "work-section"}
+      - {label: "Project Title", name: "projectTitle", widget: "string"}
+      - {label: "Project Pick", name: "projectPick", widget: "image"}
+      - {label: "Project Description", name: "description", widget: "markdown"}
+      - {label: "Project Github Link", name: "projectGithubLink", widget: "string"}
+      - {label: "Project Live Preview Link", name: "LivePreviewLink", widget: "string"}
