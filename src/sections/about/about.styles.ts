@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const StyledAboutSection = styled.div`
-  width: 600px;
+  width: fit-content;
   height: fit-content;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: aliceblue;
-  padding: 2rem;
+  padding: 4rem;
+  align-content: center;
 `;

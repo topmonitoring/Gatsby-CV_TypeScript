@@ -8,12 +8,13 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-postcss',
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
+        // eslint-disable-next-line n/no-path-concat
         path: `${__dirname}/static/assets`,
       },
     },
@@ -21,6 +22,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `sections`,
+        // eslint-disable-next-line n/no-path-concat
         path: `${__dirname}/static/sections`,
       },
     },

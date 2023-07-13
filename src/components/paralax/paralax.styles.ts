@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ScrollAnimation = styled.div`
-  margin: 45vh auto;
+  margin: 0px auto;
   z-index: 1;
   width: 60px;
   height: 60px;

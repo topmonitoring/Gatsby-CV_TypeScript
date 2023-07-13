@@ -16,8 +16,7 @@ const Header: React.FC = () => {
       }
     `,
   );
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const LogoImg = data.markdownRemark.frontmatter.logo;
   const [open, setOpen] = useState(false);
   const handleNavbar = () => {
     setOpen(!open);
@@ -25,10 +24,7 @@ const Header: React.FC = () => {
   return (
     <>
       <StyledHeder>
-        <img
-          src={frontmatter.logo}
-          style={{ height: `80px`, width: `80px` }}
-        ></img>
+        <img src={LogoImg} style={{ height: `50px`, width: `50px` }}></img>
         <HamburgerMenu open={open} toggle={handleNavbar} />
       </StyledHeder>
       <MobileNav open={open} />
