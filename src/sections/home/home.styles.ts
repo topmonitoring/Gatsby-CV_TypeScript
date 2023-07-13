@@ -1,7 +1,50 @@
 import styled from 'styled-components';
 
+export const StyledVideo = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  video {
+    width: 100%;
+    height: auto;
+    @media (max-aspect-ratio: 16/9) {
+      width: auto;
+      height: 100%;
+    }
+  }
+`;
+export const HederOverlay = styled.div`
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background: black;
+  opacity: 0.7;
+  width: 100%;
+`;
+
+export const HederTextContainer = styled.div`
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  text-align: center;
+  color: whitesmoke;
+  margin: 15rem auto;
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+`;
+
 export const ScrollAnimation = styled.div`
-  margin: 45vh auto;
+  margin: 40vh auto;
   z-index: 1;
   width: 60px;
   height: 60px;
@@ -10,7 +53,6 @@ export const ScrollAnimation = styled.div`
   position: relative;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
-  cursor: pointer;
   &::before {
     content: '';
     position: absolute;

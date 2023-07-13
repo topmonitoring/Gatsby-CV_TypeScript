@@ -15,6 +15,9 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
       - {label: "Backgraund Image", name: "backgraundImg", widget: "image"}
+      - {label: "fish", name: "fishImg", widget: "image"}
+      - {label: "bubble", name: "bubbleImg", widget: "image"}
+      - {label: "tresure chest", name: "tresureChestImg", widget: "image"}
 
   - name: "home"
     identifier_field: templateKey

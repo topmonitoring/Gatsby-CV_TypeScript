@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
   position: relative;
   cursor: pointer;
   display: block;
+  margin-top: 1rem;
 
   & span {
     background: white;

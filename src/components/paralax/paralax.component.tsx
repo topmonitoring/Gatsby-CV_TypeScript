@@ -134,7 +134,7 @@ const ParallaxComponent: React.FC<any> = ({
             backgroundImage: url(`clients`, true),
           }}
         />
-        <ScrollAnimation />
+        <ScrollAnimation onClick={() => parallax.current.scrollTo(1)} />
         <ParallaxLayer
           offset={1}
           speed={0.1}
@@ -143,6 +143,7 @@ const ParallaxComponent: React.FC<any> = ({
             display: `flex`,
             alignItems: `center`,
             justifyContent: `center`,
+            flexDirection: `column`,
           }}
         >
           {aboutSection}
@@ -155,6 +156,7 @@ const ParallaxComponent: React.FC<any> = ({
             display: `flex`,
             alignItems: `center`,
             justifyContent: `center`,
+            flexDirection: `column`,
           }}
           // onClick={() => parallax.current.scrollTo(0)}
         >

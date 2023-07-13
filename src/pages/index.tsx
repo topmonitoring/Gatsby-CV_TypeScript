@@ -1,4 +1,4 @@
-import VideoBaground from '../components/video-baground/video-baground.component';
+import HomeSection from '../sections/home/home.component';
 import AboutSection from '../sections/about/about.component';
 import ParallaxComponent from '../components/paralax/paralax.component';
 import GlobalStyle from '../globalStyles';
@@ -11,7 +11,7 @@ const IndexPage = () => (
     <GlobalStyle />
     <Header />
     <ParallaxComponent
-      homeSection={<VideoBaground />}
+      homeSection={<HomeSection />}
       aboutSection={<AboutSection />}
       footerSection={<Footer />}
     />

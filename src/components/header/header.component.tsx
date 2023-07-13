@@ -1,9 +1,23 @@
 import React, { useState } from 'react';
 import HamburgerMenu from './hamburgerMenu.component';
 import MobileNav from './mobileNav.component';
+import { useStaticQuery, graphql } from 'gatsby';
 import { StyledHeder, StyledBlurSection } from './header.styles';
 
 const Header: React.FC = () => {
+  const data = useStaticQuery(
+    graphql`
+      query {
+        markdownRemark(frontmatter: { templateKey: { eq: "home-section" } }) {
+          frontmatter {
+            logo
+          }
+        }
+      }
+    `,
+  );
+  const { markdownRemark } = data;
+  const { frontmatter } = markdownRemark;
   const [open, setOpen] = useState(false);
   const handleNavbar = () => {
     setOpen(!open);
@@ -12,8 +26,8 @@ const Header: React.FC = () => {
     <>
       <StyledHeder>
         <img
-          src={`../../static/assets/logo1.png`}
-          style={{ height: `40px`, width: `40px` }}
+          src={frontmatter.logo}
+          style={{ height: `80px`, width: `80px` }}
         ></img>
         <HamburgerMenu open={open} toggle={handleNavbar} />
       </StyledHeder>
