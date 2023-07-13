@@ -3,7 +3,7 @@ templateKey: home-section
 authorName: Dobrin Dobrev
 authorRole: Creator | Developer | Entrepreneur
 video-bgr: /assets/pexels-michal-marek-1409899-3840x2160-25fps.mp4
-logo: /assets/logo01.png
+logo: /assets/trident.png
 insta-link: https://www.instagram.com/dobrin.dobrev/
 facebook-link: https://www.facebook.com/dobrin.dobrev.942
 twitter-link: https://twitter.com/iamdobri
