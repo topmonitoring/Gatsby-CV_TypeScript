@@ -1,6 +1,10 @@
 import React from 'react';
-import { StyledAboutSection } from './about.styles';
-import ReactMarkdown from 'react-markdown';
+import {
+  StyledAboutSection,
+  StyledMarkdown,
+  StyledImage,
+} from './about.styles';
+import remarkGfm from 'remark-gfm';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const AboutSection: React.FC = () => {
@@ -22,14 +26,18 @@ const AboutSection: React.FC = () => {
   return (
     <>
       <StyledAboutSection>
-        <div className="text-3xl font-bold underline">
-          {frontmatter.authorName}
-        </div>
-        <img
-          style={{ width: `300px`, height: `300px` }}
-          src={frontmatter.authorPick}
-        ></img>
-        <ReactMarkdown>{frontmatter.description}</ReactMarkdown>
+        <StyledMarkdown remarkPlugins={[remarkGfm]}>
+          {frontmatter.description}
+        </StyledMarkdown>
+        <StyledImage>
+          <h1 className="text-3xl font-bold underline">
+            {frontmatter.authorName}
+          </h1>
+          <img
+            style={{ width: `300px`, height: `300px` }}
+            src={frontmatter.authorPick}
+          />
+        </StyledImage>
       </StyledAboutSection>
     </>
   );
