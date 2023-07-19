@@ -16,8 +16,12 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "parallax-section"}
       - {label: "Backgraund Image", name: "backgraundImg", widget: "image"}
       - {label: "fish", name: "fishImg", widget: "image"}
-      - {label: "bubble", name: "bubbleImg", widget: "image"}
-      - {label: "tresure chest", name: "tresureChestImg", widget: "image"}
+      - {label: "bubble One", name: "bubbleImgOne", widget: "image"}
+      - {label: "bubble Multiple", name: "bubbleImgMultiple", widget: "image"}
+      - {label: "jellyfish one", name: "jellyfishOne", widget: "image"}
+      - {label: "jellyfish two", name: "jellyfishTwo", widget: "image"}
+      - {label: "jellyfish three", name: "jellyfishThree", widget: "image"}
+      - {label: "kraken", name: "krakenImg", widget: "image"}
 
   - name: "home"
     identifier_field: templateKey

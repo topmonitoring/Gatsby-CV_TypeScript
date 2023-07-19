@@ -36,6 +36,7 @@
     "@react-spring/parallax": "9.7.2",
     "babel-plugin-styled-components": "2.1.1",
     "gatsby": "5.8.1",
+    "gatsby-background-image": "1.6.0",
     "gatsby-plugin-image": "3.9.0",
     "gatsby-plugin-netlify-cms": "7.9.0",
     "gatsby-plugin-sharp": "5.9.0",

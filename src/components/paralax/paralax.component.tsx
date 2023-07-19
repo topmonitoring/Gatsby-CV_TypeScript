@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax';
 import { ScrollAnimation } from './paralax.styles';
 import { useStaticQuery, graphql } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 
 // Little helpers ...
 const url = (name: string, wrap = false) =>
@@ -27,7 +28,13 @@ const ParallaxComponent: React.FC<any> = ({
             bubbleImg
             fishImg
             tresureChestImg
-            backgraundImg
+          }
+        }
+        seamlessBackground: file(relativePath: { eq: "ocean-floar.png" }) {
+          childImageSharp {
+            fluid(quality: 100, maxWidth: 1920) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
           }
         }
       }
@@ -36,7 +43,7 @@ const ParallaxComponent: React.FC<any> = ({
   const BubbleImg = data.markdownRemark.frontmatter.bubbleImg;
   const FishImg = data.markdownRemark.frontmatter.fishImg;
   const TresureChestImg = data.markdownRemark.frontmatter.tresureChestImg;
-  const BackgraundImg = data.markdownRemark.frontmatter.backgraundImg;
+  const BackgraundImg = data.seamlessBackground.childImageSharp.fluid;
   console.log(BackgraundImg);
   console.log(TresureChestImg);
   return (
@@ -76,14 +83,24 @@ const ParallaxComponent: React.FC<any> = ({
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={0}
+          offset={1}
           speed={0}
-          factor={3}
+          factor={5}
           style={{
-            backgroundImage: url(BackgraundImg),
-            backgroundSize: `cover`,
+            height: `80%`,
           }}
-        ></ParallaxLayer>
+        >
+          <BackgroundImage
+            Tag={`section`}
+            id={`test`}
+            fluid={BackgraundImg}
+            style={{
+              height: `100%`,
+              width: `100vw`,
+              position: `relative`,
+            }}
+          ></BackgroundImage>
+        </ParallaxLayer>
         <ParallaxLayer
           offset={1.3}
           speed={-0.3}

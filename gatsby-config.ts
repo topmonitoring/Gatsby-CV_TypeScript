@@ -7,6 +7,8 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-netlify-cms`,
@@ -26,7 +28,6 @@ const config: GatsbyConfig = {
         path: `${__dirname}/static/sections`,
       },
     },
-    `gatsby-transformer-remark`,
   ],
   jsxRuntime: `automatic`,
 };

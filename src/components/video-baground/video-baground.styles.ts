@@ -24,7 +24,7 @@ export const HederOverlay = styled.div`
   width: 100vw;
   z-index: 1;
   background: black;
-  opacity: 0.7;
+  opacity: 0.6;
   width: 100%;
 `;
 
