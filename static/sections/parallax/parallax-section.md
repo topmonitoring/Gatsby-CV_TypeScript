@@ -1,6 +1,6 @@
 ---
 templateKey: parallax-section
-backgraundImg: /assets/ocean-floar.png
+backgraundImg: /assets/wallpaperflare.com_wallpaper.jpg
 fishImg: /assets/great-white-shark-clip-art-shark-32f1b628fc840c8782380ca689866ead.png
 bubbleImgOne: /assets/pngwing.com.png
 bubbleImgMultiple: /assets/pngwing.com-1-.png
