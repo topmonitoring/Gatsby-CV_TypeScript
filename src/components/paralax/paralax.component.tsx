@@ -25,12 +25,16 @@ const ParallaxComponent: React.FC<any> = ({
           frontmatter: { templateKey: { eq: "parallax-section" } }
         ) {
           frontmatter {
-            bubbleImg
             fishImg
-            tresureChestImg
+            bubbleImgOne
+            bubbleImgMultiple
+            jellyfishOne
+            jellyfishTwo
+            jellyfishThree
+            krakenImg
           }
         }
-        seamlessBackground: file(relativePath: { eq: "ocean-floar.png" }) {
+        seamlessBackground: file(relativePath: { eq: "ocean-floar.jpg" }) {
           childImageSharp {
             fluid(quality: 100, maxWidth: 1920) {
               ...GatsbyImageSharpFluid_withWebp
@@ -40,12 +44,14 @@ const ParallaxComponent: React.FC<any> = ({
       }
     `,
   );
-  const BubbleImg = data.markdownRemark.frontmatter.bubbleImg;
-  const FishImg = data.markdownRemark.frontmatter.fishImg;
-  const TresureChestImg = data.markdownRemark.frontmatter.tresureChestImg;
+  const BubbleImg = data.markdownRemark.frontmatter.bubbleImgOne;
+  const BubbleImgMultiple = data.markdownRemark.frontmatter.bubbleImgMultiple;
+  // const FishImg = data.markdownRemark.frontmatter.fishImg;
+  // const JellyFishOneImg = data.markdownRemark.frontmatter.jellyfishOne;
+  const JellyFishTwoImg = data.markdownRemark.frontmatter.jellyfishTwo;
+  const JellyFishThreeImg = data.markdownRemark.frontmatter.jellyfishThree;
+  const KrakenImg = data.markdownRemark.frontmatter.krakenImg;
   const BackgraundImg = data.seamlessBackground.childImageSharp.fluid;
-  console.log(BackgraundImg);
-  console.log(TresureChestImg);
   return (
     <>
       <Parallax ref={parallax} pages={6}>
@@ -85,7 +91,7 @@ const ParallaxComponent: React.FC<any> = ({
         <ParallaxLayer
           offset={1}
           speed={0}
-          factor={5}
+          factor={3}
           style={{
             height: `80%`,
           }}
@@ -97,7 +103,8 @@ const ParallaxComponent: React.FC<any> = ({
             style={{
               height: `100%`,
               width: `100vw`,
-              position: `relative`,
+              opacity: `0.8`,
+              backgroundRepeat: `no-repeat`,
             }}
           ></BackgroundImage>
         </ParallaxLayer>
@@ -106,7 +113,10 @@ const ParallaxComponent: React.FC<any> = ({
           speed={-0.3}
           style={{ pointerEvents: `none` }}
         >
-          <img src={FishImg} style={{ width: `15%`, marginLeft: `70%` }} />
+          <img
+            src={JellyFishTwoImg}
+            style={{ width: `15%`, marginLeft: `85%` }}
+          />
         </ParallaxLayer>
 
         <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
@@ -122,7 +132,7 @@ const ParallaxComponent: React.FC<any> = ({
 
         <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
           <img
-            src={BubbleImg}
+            src={BubbleImgMultiple}
             style={{ display: `block`, width: `20%`, marginLeft: `70%` }}
           />
           <img
@@ -148,7 +158,7 @@ const ParallaxComponent: React.FC<any> = ({
             style={{ display: `block`, width: `20%`, marginLeft: `60%` }}
           />
           <img
-            src={BubbleImg}
+            src={BubbleImgMultiple}
             style={{ display: `block`, width: `25%`, marginLeft: `30%` }}
           />
           <img
@@ -179,8 +189,55 @@ const ParallaxComponent: React.FC<any> = ({
           }}
         >
           <img
-            src={TresureChestImg}
-            style={{ width: `30%`, marginTop: `280px`, marginRight: `50%` }}
+            src={JellyFishThreeImg}
+            style={{
+              width: `20%`,
+              marginTop: `280px`,
+              marginRight: `50%`,
+              opacity: `0.5`,
+            }}
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3.5}
+          speed={-0.1}
+          style={{
+            display: `flex`,
+            alignItems: `center`,
+            justifyContent: `center`,
+            pointerEvents: `none`,
+          }}
+        >
+          <img
+            src={JellyFishThreeImg}
+            style={{
+              width: `20%`,
+              marginTop: `80px`,
+              marginLeft: `50%`,
+              opacity: `0.5`,
+            }}
+          />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={4.5}
+          speed={-0.1}
+          style={{
+            display: `flex`,
+            alignItems: `center`,
+            justifyContent: `center`,
+            pointerEvents: `none`,
+          }}
+        >
+          <img
+            src={KrakenImg}
+            style={{
+              width: `1000px`,
+              marginTop: `680px`,
+              marginRight: `50%`,
+              opacity: `0.9`,
+            }}
           />
         </ParallaxLayer>
 
